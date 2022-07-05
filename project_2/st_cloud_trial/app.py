@@ -4,7 +4,7 @@ import pandas as pd
 import numpy as np
 from model_methods import Model_Methods
 from multi_app import MultiApp
-from ML_model import ML_model
+from ML_model import ML_Model
 
 # configuration of the page
 st.set_page_config(
@@ -52,5 +52,5 @@ if st.button('Submit'):
 ##### Code to run multiple python files for 1 streamlit app
 app = MultiApp()
 
-app.add_app(ML_model)
+app.add_app(ML_Model)
 app.add_app(Model_Methods)
