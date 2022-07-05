@@ -30,7 +30,7 @@ def predict_price():
                             mas_vnr_area]))
     result = np.format_float_positional((predict(data)[0]), unique=False, precision=2)
     st.info(f'# Our SalePrice suggestion is ${result}')
-    st.write('with an estimated uncertainty of +/- \$11K')
+    st.write('with an estimated uncertainty of ± \$11K')
 
 st.markdown('''
 Please enter your house details to get a 
