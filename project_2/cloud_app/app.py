@@ -28,7 +28,7 @@ def predict_price():
                             garage_area,
                             year_built,
                             mas_vnr_area]))
-    result = np.format_float_positional((predict(data)[0]), unique=False, precision=2)
+    result = np.format_float_positional((predict(data)[0]), unique=False, precision=0)
     st.info(f'# Our SalePrice suggestion is ${result}')
     st.write('with an estimated uncertainty of ± \$11K')
 
