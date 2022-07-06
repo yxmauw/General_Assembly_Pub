@@ -2,7 +2,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-from modules.model_methods import predict
+from model_methods import predict
 
 # configuration of the page
 st.set_page_config(
