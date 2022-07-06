@@ -15,7 +15,7 @@ def predict(new_data):
     shaped_data = np.reshape(new_data, (1, -1))
     input_data = imp.transform(shaped_data)
     # load model
-    with open('project_2/st_cloud_trial/final_model.sav','rb') as f:
+    with open('project_2/cloud_app/final_model.sav','rb') as f:
         model = pickle.load(f)
     pred = model.predict([input_data][0])
     return pred 
