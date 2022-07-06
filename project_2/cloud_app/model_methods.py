@@ -8,7 +8,7 @@ import pickle
     
 def predict(new_data):
     # impute missing `Overall Cond` values
-    url = 'https://raw.githubusercontent.com/yxmauw/General_Assembly_Pub/main/project_2/app/streamlit_imp_data.csv'
+    url = 'https://raw.githubusercontent.com/yxmauw/General_Assembly_Pub/main/project_2/cloud_app/streamlit_imp_data.csv'
     imp_data = pd.read_csv(url, header=0)
     imp = KNNImputer()
     imp.fit(imp_data)
