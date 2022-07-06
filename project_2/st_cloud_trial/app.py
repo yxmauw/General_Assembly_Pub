@@ -2,9 +2,7 @@
 import streamlit as st
 import pandas as pd
 import numpy as np
-from model_methods import Model_Methods
-from multi_app import MultiApp
-from ML_model import ML_Model
+from model_methods import predict
 
 # configuration of the page
 st.set_page_config(
@@ -30,7 +28,7 @@ def predict_price():
                             garage_area,
                             year_built,
                             mas_vnr_area]))
-    result = np.format_float_positional((Model_Methods.predict(data)[0]), unique=False, precision=2)
+    result = np.format_float_positional((predict(data)[0]), unique=False, precision=2)
     st.info(f'# Our SalePrice suggestion is ${result}')
     st.write('with an estimated uncertainty of ± \$11K')
 
@@ -48,9 +46,3 @@ mas_vnr_area = st.text_input('Enter house masonry veneer area in square feet', '
 if st.button('Submit'):
     with st.sidebar:
         predict_price()
-
-##### Code to run multiple python files for 1 streamlit app
-app = MultiApp()
-
-app.add_app(ML_Model)
-app.add_app(Model_Methods)
