@@ -2,7 +2,9 @@
 
 This folder contains code and associated files that can be used to host the web application locally on default domain `localhost:8501`.
 
-Using Anaconda prompt, navigate to folder in computer that contains the `app.py` file, enter command > `streamlit run app.py`. 
+Using Anaconda prompt, install `$ pip install streamlit`. For more details, go to [Streamlit](https://docs.streamlit.io/library/get-started/installation)
+
+Then navigate to folder in computer that contains the `app.py` file, enter command > `streamlit run app.py`. 
 
 You should see the following:
 
