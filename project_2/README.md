@@ -28,8 +28,8 @@ To predict the `SalePrice` for each house. For each Id in the test set, I must p
 1. [Business case groupwork](#business-case)
 
 For file reading accessibility, I split my technical report to 2 parts. 
-1. `Submission_EDA.ipynb` 
-1. `Submission_ML.ipynb` 
+1. [`Submission_EDA.ipynb`](#part-1) 
+1. [`Submission_ML.ipynb`](#part-2) 
 
 ---
 ## __Part 1:__
