@@ -75,7 +75,7 @@ For file reading accessibility, I split my technical report to 2 parts.
 
 ### __Business Case:__
 * Find common features used for model predictions among group members' models.
-* 6 common features found
+* 6 common features found, applied molynomial engineering for `Gr Liv Area` feature.
 * Isolate the features on training data and rerun `GridSearchCV`.
 * Using `mean_absolute_error` as scoring metric, I picked the best model for deployment on web application.
 * Web application [link](https://yxmauw-general-assembly-pub-project-2cloud-appapp-rr21s2.streamlitapp.com/)
