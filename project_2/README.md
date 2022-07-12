@@ -15,7 +15,7 @@ There are 3 datasets included in the [`datasets`](datasets/) folder for this pro
 * [`sample_sub_reg.csv`](datasets/sample_sub_reg.csv): An example of a correctly formatted submission for this challenge (with a random number provided as predictions for `SalePrice`). My submission to Kaggle must match this format
 * [`test.csv`](datasets/test.csv): Contains Kaggle test data. This data is fed into my regression model to make predictions for Kaggle submission. Target variable (`SalePrice`) is excluded from this data.
 * [`train.csv`](datasets/train.csv): Contains all of the training data for my model. 
-* [Data Dictionary]((http://jse.amstat.org/v19n3/decock/DataDocumentation.txt))
+* [Data Dictionary](http://jse.amstat.org/v19n3/decock/DataDocumentation.txt)
 
 ## __Goal:__
 To predict the `SalePrice` for each house. For each Id in the test set, I must predict the value of the SalePrice variable.
