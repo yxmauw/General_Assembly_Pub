@@ -77,5 +77,11 @@ For file reading accessibility, I split my technical report to 2 parts.
 * Find common features used for model predictions among group members' models.
 * 6 common features found, applied polynomial engineering for `Gr Liv Area` feature.
 * Isolate the features on training data and rerun `GridSearchCV`.
-* Using `mean_absolute_error` as scoring metric, I picked the best model for deployment on web application.
+* Using `mean_absolute_error`(MAE) as scoring metric, I picked the best model for deployment on web application.
 * Web application [link](https://yxmauw-general-assembly-pub-project-2cloud-appapp-rr21s2.streamlitapp.com/)
+
+### __Summary:__
+* `SalePrice` has a right skewed distribution, which results in a model that is unable to predict accurately for house sale prices above $400k
+* `ElasticNet` under `GridSearchCV` is the final model used for deployment
+* Deployed model has an accuracy of ±$11k based on MAE score
+* There is high multicollinearity between strong predictive features for `SalePrice`
