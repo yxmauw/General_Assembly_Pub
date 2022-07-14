@@ -7,7 +7,7 @@ from sklearn.impute import KNNImputer
 import pickle
     
 def predict(new_data):
-    # impute missing `Overall Cond` values
+    # impute missing `Overall Qual` values
     url = 'https://raw.githubusercontent.com/yxmauw/General_Assembly_Pub/main/project_2/cloud_app/streamlit_imp_data.csv'
     imp_data = pd.read_csv(url, header=0)
     imp = KNNImputer()
