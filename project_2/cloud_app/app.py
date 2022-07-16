@@ -48,4 +48,7 @@ if st.button('Submit'):
         try: 
             predict_price()
         except:
-            st.warning('Please enter property details 🙏. \n\n Thank you.')
+            st.warning('''Oops, looks like you missed a spot. 
+            Please complete all fields to get a quote estimate 
+            for property Sale Price 🙏. 
+            \n\n Thank you. 🙂''')
