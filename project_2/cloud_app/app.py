@@ -45,4 +45,7 @@ mas_vnr_area = st.text_input('Enter house masonry veneer area in square feet', '
 
 if st.button('Submit'):
     with st.sidebar:
-        predict_price()
+        try: 
+            predict_price()
+        except:
+            st.warning('Please enter property details 🙏. \n\n Thank you.')
