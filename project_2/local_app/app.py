@@ -23,12 +23,13 @@ def predict_price():
     data = list(map(float, [gr_liv_area,
                             (float(gr_liv_area))**2,
                             (float(gr_liv_area))**3,
-                            overall_qual, 
-                            total_bsmt_sf,
-                            garage_area,
+                            overall_qual,
+                            mas_vnr_area, 
                             year_built,
-                            mas_vnr_area]))
-    result = np.format_float_positional((predict(data)[0]), unique=False, precision=0)
+                            total_bsmt_sf,
+                            garage_area
+                            ]))
+    result = np.format_float_positional((predict(data)[0]), unique=False, precision=2)
     st.info(f'# Our SalePrice suggestion is ${result}')
     st.write('with an estimated uncertainty of ± \$11K')
 
@@ -45,4 +46,10 @@ mas_vnr_area = st.text_input('Enter house masonry veneer area in square feet', '
 
 if st.button('Submit'):
     with st.sidebar:
-        predict_price()
+        try: 
+            predict_price()
+        except:
+            st.warning('''Oops, looks like you missed a spot. 
+            Please complete all fields to get a quote estimate 
+            for property Sale Price 🙏. 
+            \n\n Thank you. 🙂''')
